@@ -1,3 +1,10 @@
+:root {
+    --border: 1px solid, black;
+    --padding: 10px;
+    --text-font: Times, Arial, sans-serif;
+    --box-shadow: 0 0 30px gray;
+}
+
 main {
     max-width: 840px;
 }
@@ -5,33 +12,33 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 10px;
-    box-shadow: 0 0 30px gray;
-
+    border: var(--border);
+    padding: var(--padding);
+    box-shadow: var(--box-shadow)
 }
 
 nav {
     background-color: darkblue;
-    padding: 10px;
-}
+    padding: var(--padding);
 
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
+    nav a {
+        color: white;
+        display: block;
+        padding: 20px;
+    }
 
-h1 {
-    color: darkblue;
+    h1 {
+        color: darkblue;
+    }
+
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px sold black;
+    border: var(--border);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow);
 }
 
 p {
