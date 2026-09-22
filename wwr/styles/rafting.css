@@ -5,8 +5,8 @@
     /* Bright Teal - interactive accents */
     --accent1-color: #1d2d44;
     /* Navy Charcoal - main body text for high contrast */
-    --accent2-color: #ee9b00;
-    /* Amber Gold - button highlights & hero elements */
+    --accent2-color: #2f3537;
+    /* Slate gray- Sleek gray for article overlay and buttons */
 
     --heading-font: "Trebuchet MS", "Lucida Sans", sans-serif;
     --body-font: Verdana, Geneva, sans-serif;
@@ -60,16 +60,30 @@ article {
 
 h1 {
     position: absolute;
-    top: 20px;
+    top: 0px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    opacity: 0.8;
+    background-color: var(--accent2-color);
     color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    right: 5px;
+    opacity: .8;
+    background-color: var(--accent2-color);
+    color: #ffffff;
+    padding: 5px;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 175px;
+    height: auto;
+    margin-left: 12px;
+    padding: 5px;
 }
