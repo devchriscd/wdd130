@@ -203,3 +203,69 @@ footer p {
     width: 32px;
     height: 32px;
 }
+
+/* Contact Page Specific Styles */
+
+/* Company Info Section */
+.company-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.company-info iframe {
+    border: none;
+    max-width: 100%;
+}
+
+/* Employee Profiles */
+.employees {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.employees figure {
+    text-align: center;
+}
+
+.employees img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Form Styles */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.contact-form fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #005f73;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0a9396;
+}

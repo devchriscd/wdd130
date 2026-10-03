@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description"
+      content="Contact White Water Rafting for questions, reservations, or general inquiries. Reach out via email, phone, or form.">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <!-- Keep your existing header/nav here -->
+
+    <main>
+        <h1>Contact Us</h1>
+
+        <!-- 1. Company Information -->
+        <section class="company-info">
+            <h2>Our Office</h2>
+            <address>
+                <p>123 River Run Way, Salmon, ID 83467</p>
+                <p>Phone: <a href="tel:5551234567">(555) 123-4567</a></p>
+                <p>Email: <a href="mailto:info@wwrafting.com">info@wwrafting.com</a></p>
+            </address>
+
+            <!-- Embedded Google Map -->
+            <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11516.332303023021!2d-113.9015!3d45.1764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDEwJzM1LjAiTiAxMTPCsDU0JzA1LjQiVw!5e0!3m2!1sen!2sus!4v1234567890123"
+                  width="400" height="300" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- 2. Employee Profiles -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/employee1.jpg" alt="Jane Doe, Lead River Guide">
+                <figcaption>Jane Doe - Lead River Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="John Smith, Safety Director">
+                <figcaption>John Smith - Safety Director</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Alex Johnson, Operations Manager">
+                <figcaption>John Appleseed - Operations Manager</figcaption>
+            </figure>
+        </section>
+
+        <!-- 3. Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label><input type="radio" id="general" name="purpose" value="general" checked>
+                        General Inquiry</label>
+                    <label><input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question</label>
+                    <label><input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

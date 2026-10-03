@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <header>
+        <h1>HTML & CSS Basics Quiz</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+
+            <!-- Question 1: Text Input -->
+            <div class="form-item">
+                <label for="q1">1. What does the acronym CSS stand for?</label>
+                <input type="text" id="q1" name="q1" placeholder="Type your answer here..."
+                  required>
+            </div>
+
+            <!-- Question 2: Textarea -->
+            <div class="form-item">
+                <label for="q2">2. Explain the main difference between HTML and CSS:</label>
+                <textarea id="q2" name="q2" rows="4" placeholder="Describe in a few sentences..."
+                  required></textarea>
+            </div>
+
+            <!-- Question 3: Select Dropdown -->
+            <div class="form-item">
+                <label for="q3">3. Which HTML element is used to define an unordered list?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="ol">&lt;ol&gt;</option>
+                    <option value="ul">&lt;ul&gt;</option>
+                    <option value="list">&lt;list&gt;</option>
+                </select>
+            </div>
+
+            <!-- Question 4: Number Input -->
+            <div class="form-item">
+                <label for="q4">4. How many main heading levels exist in HTML (h1 to h?):</label>
+                <input type="number" id="q4" name="q4" min="1" max="10" placeholder="Enter a number"
+                  required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+</body>
+
+</html>
