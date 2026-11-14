@@ -1,0 +1,134 @@
+:root {
+    /* Colors */
+    --primary-color: #174A96;
+    /* raft blue: header, headings, links */
+    --secondary-color: #1F2A2E;
+    /* river rock: footer, dark sections */
+    --accent1-color: #F5C400;
+    /* helmet yellow: highlights, buttons */
+    --accent2-color: #1FA3D6;
+    /* logo cyan: borders, small details */
+    --accent3-color: #4A6B35;
+    /* moss green: optional sections or icons */
+    --background-color: #F4F8FB;
+    /* whitewater spray: page background */
+    --banner-color: rgba(244, 248, 251, .75);
+    /* see-through spray for overlays */
+    --text-color: #1A2228;
+    /* near-black: body text */
+    --white: #FFFFFF;
+    --border: 1px solid rgba(0, 0, 0, .2);
+
+    /* fonts */
+    --heading-font: Chewy, sans-serif;
+    --body-font: "National Park", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--secondary-color);
+    border-bottom: 4px solid var(--accent1-color);
+    color: var(--white);
+}
+
+header a {
+    color: var(--white);
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: .5rem;
+    padding: 5px;
+}
+
+/* hero div */
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    background-color: var(--banner-color);
+    padding: .5rem;
+    text-align: center;
+    opacity: .7;
+}
+
+article {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    left: 0;
+    background-color: var(--banner-color);
+    color: var(--text-color);
+}
+
+/* section */
+
+section {
+    margin: .5rem 0;
+    padding: 5px 0;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-top: 4px solid var(--accent1-color);
+}
+
+/* class selectors*/
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    border: var(--border);
+}
+
+.banner {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: var(--border);
+    padding: .5rem;
+    text-align: center;
+}
