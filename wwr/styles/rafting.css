@@ -6,10 +6,6 @@
     /* river rock: footer, dark sections */
     --accent1-color: #F5C400;
     /* helmet yellow: highlights, buttons */
-    --accent2-color: #1FA3D6;
-    /* logo cyan: borders, small details */
-    --accent3-color: #4A6B35;
-    /* moss green: optional sections or icons */
     --background-color: #F4F8FB;
     /* whitewater spray: page background */
     --banner-color: rgba(244, 248, 251, .75);
@@ -20,8 +16,8 @@
     --border: 1px solid rgba(0, 0, 0, .2);
 
     /* fonts */
-    --heading-font: Chewy, sans-serif;
-    --body-font: "National Park", sans-serif;
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 * {
@@ -79,15 +75,6 @@ h1 {
     opacity: .7;
 }
 
-article {
-    position: absolute;
-    bottom: 15px;
-    right: 0;
-    left: 0;
-    background-color: var(--banner-color);
-    color: var(--text-color);
-}
-
 /* section */
 
 section {
@@ -117,6 +104,15 @@ footer {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    left: 0;
+    background-color: var(--banner-color);
+    color: var(--text-color);
 }
 
 .hero article img {
