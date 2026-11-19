@@ -7,11 +7,13 @@ body {
     border: 3px dashed darkcyan;
     background-color: lightyellow;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex-item {
-    width: 250px;
+    width: 150px;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 0.5rem;
