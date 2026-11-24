@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Form Exercise | WDD130</title>
+</head>
+
+<body>
+    <header>
+        <h1>Poll Form Exercise</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullname">Fullname</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="useremail">Email</label>
+                <input type="email" id="useremail" name="useremail" required>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser">What is your favourite internet browser</label>
+                <select name="browser" id="browser">
+                    <option value="1">Chrome</option>
+                    <option value="2">Safari</option>
+                    <option value="3">Firefox</option>
+                    <option value="4">Microsoft Edge</option>
+                    <option value="5">Opera GX</option>
+                    <option value="6">Other</option>
+                </select>
+                <label for="pet">Do you have a houshold pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+                <label for="places">List the places you lived</label>
+                <textarea name="places" id="places" rows="4" placeholder="New York, New York"></textarea>
+            </fieldset>
+
+
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
